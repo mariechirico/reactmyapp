@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,600&display=swap');
+
+body{
+    background-image: url("https://i.imgur.com/hmRwyH3.jpg");
+    font-family: 'Raleway', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Header*/
+.head-image{ 
+    height: auto;
+    width: 45%;
+    display: block;
+    float: right;
+    box-shadow: 2px 2px 2px #9494b8;
+}
+h1{
+    text-shadow: 2px 2px 2px #9494b8; 
+    color: #33334d;
+}
+button{
+    margin: 2px;
+    background-color: #33334d !important;
+    box-shadow: 2px 2px 2px #5c5c8a;
+}
+.header-MMC{
+    background: rgba(238, 238, 238, 0.9);
+    padding: 2%;
+    border-radius: 5px;
+}
+.social-buttons{
+    margin-bottom: 1%;
+}
+.ahref a:hover{
+    text-decoration-line: none;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Menus*/
+.center-info{
+    border-radius: 5px;
+    padding-top: 2%;
+    transition-property: display;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+#skills, #school{
+    padding: 2px;
+    background-color: #33334d;
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #9494b8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+/* Animation */
+@keyframes show-list{
+    0% { opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% { opacity: 1.0;}
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes hide-list{
+    0% {opacity: 1.0;}
+    25% {opacity: 0.75;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.25;}
+    100% {opacity: 0;}
+}
+.main-list{
+    display: none; 
+    background: rgba(238, 238, 238, 0.9);
+    margin-top: -10px;
+    padding-bottom: 2%;
+    animation-name: show-list;
+    animation-duration: 0.5s;
+}
+.fade{
+    background: rgba(238, 238, 238, 0.9);
+    margin-top: -10px;
+    padding-bottom: 2%;
+    animation-name: hide-list;
+    animation-duration: 0.5s;
 }

@@ -5,9 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    App(), 
+    App, 
   document.getElementById('root') 
 );
+
+// function showList(id){
+//   const idList = id;
+//   const classNameList = "main-list displayBlock";
+  
+//   return <ul id={idList} className={classNameList} />
+  
+// }
+// ReactDOM.render(showList(document.getElementsByTagName("ul")[0].id), document.getElementsByTagName("ul")[0]);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -68,7 +68,6 @@ button{
     100% {opacity: 0;}
 }
 .main-list{
-    display: none; 
     background: rgba(238, 238, 238, 0.9);
     margin-top: -10px;
     padding-bottom: 2%;
@@ -81,4 +80,10 @@ button{
     padding-bottom: 2%;
     animation-name: hide-list;
     animation-duration: 0.5s;
+}
+.displayBlock{
+    display: block;
+}
+.displayNone{
+    display: none;
 }
